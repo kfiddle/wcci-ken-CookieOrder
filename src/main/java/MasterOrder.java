@@ -21,6 +21,8 @@ public class MasterOrder {
 
     public void removeVariety(int type) {
         orders.removeIf(order -> order.contains(type));
+
+
     }
 
     public int giveVarietyBoxes(String givenType) {
@@ -34,8 +36,10 @@ public class MasterOrder {
     }
 
     public void showOrder() {
+        int i = 1;
         for (CookieOrder order : orders) {
-            System.out.println(order);
+            System.out.println(i + "-            " + order);
+            i++;
         }
         System.out.println();
         System.out.println("You have ordered a total of " + getTotalBoxes() + " boxes.");

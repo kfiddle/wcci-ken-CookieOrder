@@ -36,6 +36,7 @@ public class CookieOrder {
         int index = 0;
         for (int i = 0; i < TYPES.length; i++) {
             if (givenType.equals(TYPES[i])) {
+
                 index = i;
             }
         }
